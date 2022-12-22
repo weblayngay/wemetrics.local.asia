@@ -53,20 +53,6 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
             ->namespace($this->namespace)
             ->group(base_path('routes/admin.php'));
-
-            /**
-             * campaign route
-             */
-            Route::middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/camp/coupon-2022-08.php'));
-
-            /**
-             * api leeandteevn
-             */
-            Route::middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/intergrate/websites/leeandteevn/admin.php'));
         });
     }
 

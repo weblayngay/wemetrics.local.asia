@@ -1,67 +1,79 @@
 <?php
-/**
- * @var \App\Helpers\UrlHelper $urlHelper
- */
-$urlHelper = app('UrlHelper');
-$products = !empty($data['products']) ? $data['products'] : [];
-$title = isset($data['title']) ? $data['title'] : '';
-$producers = !empty($data['producers']) ? $data['producers'] : [];
-$type = $data['type'];
+    /**
+     * @var \App\Helpers\UrlHelper $urlHelper
+     */
+    use App\Helpers\TranslateHelper;
+    use App\Helpers\DateHelper;
+
+    $urlHelper = app('UrlHelper');
+    $vouchers = !empty($data['vouchers']) ? $data['vouchers'] : [];
+    $title = isset($data['title']) ? $data['title'] : '';
 ?>
 
 @extends('backend.main')
 
 @section('content')
-    @include('backend.elements.content_action', ['title' => $title, 'action' => 'backend.elements.actions.product.product_list'])
+    @include('backend.elements.content_action', ['title' => $title, 'action' => 'backend.elements.actions.voucher.voucher_list'])
+    @include('backend.elements.content_search', ['search' => 'backend.elements.searchs.voucher.voucher_search'])
     <div class="row">
         <div class="col-xl-12">
             <section class="hk-sec-wrapper">
                 <div class="row">
                     <div class="col-sm">
-                        <div class="table-wrap">
+                        <div class="table-wrap" style="overflow-x:auto;">
                             <form action="#" method="post" id="admin-form">
-                                <input type="hidden" name="type" value="{{$type}}">
                                 @csrf
-                                <table id="datable_1" class="table table-hover w-100 display pb-30 js-main-table">
+                                    <table class="table table-hover w-100 display pb-30 js-main-table">
                                     <thead>
                                     <tr>
-                                        <th><input type="checkbox" class="checkAll" name="checkAll" value=""></th>
-                                        <th>#</th>
-                                        <th>Ảnh</th>
-                                        <th>Tên sản phẩm</th>
-                                        <th>Nhà sản xuất</th>
-                                        <th>Nhóm sản phẩm</th>
-                                        <th>Giá</th>
-                                        <th>Trạng thái</th>
-                                        <th>Ngày tạo</th>
-                                        <th>Bật</th>
-                                        <th>Id</th>
+                                        <th scope="col"><input type="checkbox" class="checkAll" name="checkAll" value=""></th>
+                                        <th scope="col">{{__('Mã giảm giá')}}</th>
+                                        <th scope="col">{{__('Nhóm')}}</th>
+                                        <th scope="col">{{__('Loại')}}</th>
+                                        <th scope="col">{{__('Sử dụng')}}</th>
+                                        <th scope="col">{{__('Được cấp')}}</th>
+                                        <th scope="col">{{__('Ngày hết hạn')}}</th>
+                                        <th scope="col">{{__('Bật')}}</th>
+                                        <th scope="col">{{__('Id')}}</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @if(!empty($products) && count($products) > 0)
-                                        @foreach($products as $key => $item)
+                                    @if(!empty($vouchers) && count($vouchers) > 0)
+                                        @foreach($vouchers as $key => $item)
                                             <tr>
-                                                <th><input type="checkbox" class="checkItem" name="cid[]" value="{{ $item->product_id }}"></th>
-                                                <td>{{ $key + 1 }}</td>
-                                                <td>
-                                                    @if(!empty($item->urlAvatar))
-                                                        <img width="70px" class="js-lazy-loading" data-src="{{ asset($item->urlAvatar) }}">
-                                                    @endif
+                                                <td data-label="checkbox"><input type="checkbox" class="checkItem" name="cid[]" value="{{ $item->voucher_id }}"></td>
+                                                <td data-label="Mã giảm giá"><a href="@php echo $urlHelper::admin('voucher', 'edit')."?id=$item->voucher_id" @endphp">{{ $item->voucher_code }}</a></td>
+                                                <td data-label="Nhóm">{{ !empty($item->group) ? $item->group->vouchergroup_name : '' }}</td>
+                                                <td data-label="Loại">{{ TranslateHelper::getTranslate('vi', 'type', $item->voucher_type) }}</td>
+                                                <td data-label="Sử dụng">
+                                                    <span class="{{($item->voucher_is_used == 'no') ? 'badge badge-warning' : 'badge badge-success'}}">
+                                                        {{ TranslateHelper::getTranslate('vi', 'isUsed', $item->voucher_is_used) }}
+                                                    </span>
                                                 </td>
-                                                <td><a href="@php echo $urlHelper::admin('product', 'edit', ['type' => $type, 'id' => $item->product_id]) @endphp">{{ $item->product_name }}</a></td>
-                                                <td>{{ $item->producerName }} </td>
-                                                <td>{{ \App\Models\Product::GROUP_NAME[$item->product_group] }}</td>
-                                                <td>{{ $item->product_price }}</td>
-                                                <td>{{ $item->product_status }}</td>
-                                                <td>{{ $item->product_created_at}}</td>
-                                                <td>{{ $item->product_status_show }}</td>
-                                                <td>{{ $item->product_id }}</td>
+                                                <td data-label="Được cấp">
+                                                    <span class="{{($item->voucher_is_assigned == 'no') ? 'badge badge-warning' : 'badge badge-success'}}">
+                                                        {{ TranslateHelper::getTranslate('vi', 'isAssigned', $item->voucher_is_assigned) }}
+                                                    </span>
+                                                </td>
+                                                <td data-label="Ngày hết hạn">{{ DateHelper::getDate('d/m/Y', $item->voucher_expired_at) }}</td>
+                                                <td data-label="Bật">
+                                                    <span class="{{($item->voucher_status == 'inactive') ? 'badge badge-danger' : 'badge badge-success'}}">
+                                                        {{ TranslateHelper::getTranslate('vi', 'status', $item->voucher_status) }}
+                                                    </span>
+                                                </td>
+                                                <td data-label="Id"><a href="@php echo $urlHelper::admin('voucher', 'edit')."?id=$item->voucher_id" @endphp">{{ $item->voucher_id }}</a></td>
                                             </tr>
                                         @endforeach
+                                        @else
+                                            <tr>
+                                                <td colspan="9" class="not-found-records">{{__('Không tồn tại dữ liệu')}}</td>
+                                            </tr>
                                     @endif
                                     </tbody>
                                 </table>
+                                @if(!empty($vouchers))
+                                    {{ $vouchers->links('backend.elements.pagination') }}
+                                @endif
                             </form>
                         </div>
                     </div>
