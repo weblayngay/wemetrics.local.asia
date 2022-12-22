@@ -1,0 +1,472 @@
+input.checkbox--light{
+    display: inline-block;
+    position: relative;
+    width: 45px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border: 0px;
+
+}
+input.checkbox--light:checked{
+    background: #03a9f4;
+}
+input.checkbox--light:before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 2, .2);
+}
+input.checkbox--light:checked:before{
+    left: 20px;
+}
+
+
+.main-menu nav > ul > li > ul.my-dropdown > li:hover > a {
+    color: #fff !important;
+}
+
+/* Begin Thanh Long My Style */
+
+/* Begin Top Header */
+
+.m-main-menu {
+	.mean-container .mean-nav ul li a
+}
+
+.top-header-content
+{
+	display: contents!important;
+    color: #099B05!important;
+	font-weight: bolder;
+}
+
+/*Logo*/
+.top-header-logo {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.primary-menu-left {
+	float: left;
+}
+.main-menu.primary-menu-left nav > ul > li {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.main-menu.primary-menu-left > nav > ul > li > a {
+	padding: 5px 0;
+}
+.primary-menu-left>nav>ul>li>ul.dropdown {
+	/*right: 0;*/
+}
+.primary-menu-left > nav > ul > li > a > i {
+  color: #099B05;
+  font-size: 18px;
+  margin-right: 7px;
+}
+.primary-menu-left > nav > ul > li > a > svg {
+  color: #099B05;
+  margin-right: 7px;
+}
+/*Primary Dropdown*/
+
+.primary-menu-left nav > ul > li > ul.dropdown {
+  padding: 0;
+  line-height: 30px;
+}
+.primary-menu-left > nav > ul > li > ul.primary-dropdown {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #ebebeb;
+	box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+	max-width: 220px;
+	padding: 0;
+}
+.primary-menu-left > nav > ul > li > ul.primary-dropdown > li {
+	border-bottom: 1px solid #ebebeb;
+	margin: 0 5px;
+	position: relative;
+}
+.primary-menu-left > nav > ul > li > ul.primary-dropdown > li > a {
+  color: #777;
+  display: block;
+  padding: 8px 10px;
+}
+.primary-menu-left > nav > ul > li > ul.primary-dropdown > li > a > svg {
+  color: #099B05;
+  margin-right: 7px;
+}
+
+.tel-label {
+	font-size: 14px;	
+}
+
+.customize-add-to-cart
+{
+	width: 220px;
+}
+
+.customize-add-to-cart > a
+{
+	font-size: 12px!important;
+	text-align: center;
+}
+
+.customize-btn-add-wish {
+	text-align: right; 
+	border-bottom: 0px;
+}
+
+.customize-btn-add-wish .qty-cart-btn {
+	width: 220px;
+}
+
+.customize-btn-add-wish .qty-cart-btn > a {
+	font-size: 12px!important;
+	text-align: center;
+}
+
+.customize-btn-add-wish-2 {
+	border-bottom: 0px;
+}
+
+.customize-btn-add-wish-2 .qty-cart-btn {
+	width: 220px;
+}
+
+.customize-btn-add-wish-2 .qty-cart-btn > a {
+	font-size: 12px!important;
+	text-align: center;
+}
+
+.customize-quantity {
+    box-shadow: 3px 3px 9px rgb(0 0 0 / 9%);
+    text-align: right;
+    width: 100%;
+    color: #5b5c6e;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff!important;
+}
+
+.customize-static-bottom {
+  margin-top:10px; 
+  margin-bottom: 10px; 
+  text-align:center!important;
+  overflow: hidden;
+  width: 100%;
+}
+.customize-static-bottom-image {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.customize-static-bottom-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.customize-static-bottom:hover .customize-static-bottom-image {
+	opacity: 0.3;
+}
+
+.customize-static-bottom:hover .customize-static-bottom-middle {
+	opacity: 1;
+}
+
+.customize-static-bottom-text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 12px;
+  padding: 10px 10px;
+}
+
+/* Mobile Device :320px. */
+@media (max-width: 767px) {
+	.primary-menu-left {
+	  display: none;
+	}
+	
+	.logo {
+	  display: none;
+	}
+	
+	.top-header-logo {
+	  display: block;		
+	}
+
+	.split-new-product {
+		max-width: 50%!important;
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-left: 0px;
+	}
+	
+	.rating {
+	  float: right;
+	  line-height: 20px;
+	  color: #e9b436;
+	  padding-right: 20px;
+	}
+
+	.tel-label {
+		font-size: 12px;
+	}
+	
+	.customize-btn-add-wish {
+		display: none;
+	}
+	
+	.customize-static-bottom {
+	  text-align:center!important;
+	}	
+
+	.customize-static-bottom-text {
+	  background-color: #04AA6D;
+	  color: white;
+	  font-size: 10px;
+	  padding: 5px 5px;
+	}
+
+	/* Begin owl carousel */
+	.owl-carousel .owl-stage-outer {
+		min-height: 200px;
+	}
+
+	.owl-carousel.owl-drag .owl-item {
+		min-height: 200px;	
+	}
+
+	.single-slide.align-center-left {
+		min-height: 200px;	
+	}	
+	/* End owl carousel */
+
+	/* Begin mobile-menu */
+	.m-mobile-menu .mean-bar .mean-nav {
+		background-color: #099B05!important;
+	}	
+	/* End mobile-menu */	
+}
+/* End Mobile Device :320px. */
+
+/* Tablet Desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.primary-menu-left {
+	  display: none;
+	}
+	
+	.logo {
+	  display: none;
+	}
+
+	.top-header-logo {
+	  display: block;		
+	}
+
+	.split-new-product {
+		max-width: 33.33%!important;
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-left: 0px;	
+	}
+
+	.tel-label {
+		font-size: 12px;
+	}	
+	
+	.customize-btn-add-wish-2 {
+		display: none;
+	}	
+	
+	.customize-static-bottom {
+	  text-align:center!important;
+	}	
+}
+
+/* Large Desktop Device :1501px*/
+@media (min-width: 1501px) {
+	.primary-menu {
+	  display: none!important;
+	}
+	
+	.top-header-logo {
+	  display: none!important;		
+	}
+	
+	.customize-btn-add-wish-2 {
+		display: none;
+	}		
+	
+}
+/* End Large Desktop Device :1501px*/
+
+/*Desktop Device : 1200px*/
+@media (min-width: 1200px) and (max-width: 1500px) {
+	.primary-menu {
+	  display: none!important;
+	}
+
+	.top-header-logo {
+	  display: none!important;		
+	}
+
+	.customize-btn-add-wish-2 {
+		display: none;
+	}		
+}
+/* End Desktop Device : 1200px*/
+
+/* Normal Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.primary-menu {
+	  display: none!important;
+	}	
+
+	.top-header-logo {
+	  display: none!important;		
+	}
+
+	.customize-btn-add-wish-2 {
+		display: none;
+	}		
+}
+/* End Normal Device :992px. */
+
+/* End Top Header */
+.img-center
+{
+    max-width: 100%; 
+    min-width: 100%; 
+    max-height: 290px; 
+    min-height: 290px; 
+    object-fit: contain; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.m-btn-read-more
+{
+    border-color: #099B05;
+}
+
+.m-product-content-1
+{
+    font-weight: bolder; 
+    padding: 5px; 
+    margin: -5px;
+}
+
+.m-product-content-2
+{
+    padding: 5px; 
+    margin: -20px; 
+    font-weight: bolder;
+}
+
+.m-product-content-3
+{
+    font-weight: lighter; 
+    padding: 5px; 
+    margin: -40px
+}
+
+.m-pos-content
+{
+    text-align: center;
+}
+
+.m-single-product
+{
+    border-radius: 20px;
+}
+
+.m-pos-title
+{
+    text-align: center; 
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.fa-hover a:hover
+{
+    background-color:#099B05;
+    color:#ffffff!important;
+    text-decoration:none;
+    border-radius: 5px;
+}
+
+.fa-hover b
+{
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #099B05;
+}
+
+.fa-hover b:hover
+{
+    color: #ffffff;
+}
+
+.fa-mobile 
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Begin Shopping Cart Page */
+.m-cart-page-thanks
+{
+	font-size: 16px; 
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px 15px 15px 15px;
+	width: 100%;
+	line-height: 30px;
+}
+
+.m-cart-page-thanks a
+{
+	color: #fff!important; 
+	font-weight: 400!important;
+}
+
+.m-cart-page-thanks a:hover
+{
+	color: #ffff00!important; 
+	font-weight: 700!important;
+}
+
+
+.btn-use-voucher {
+  margin-top: 30px;
+  color: #ffffff!important;
+  width: 100%;
+}
+
+/* End Shopping Cart Page */
+
+/* End Thanh Long My Style */

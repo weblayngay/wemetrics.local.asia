@@ -1,0 +1,52 @@
+{
+    "name": "abstractapi/php-ip-geolocation",
+    "description": "AbstractIpGeolocation - Wrapper to quickly start using the powerful AbstractAPI's IP geolocation service in your projects.",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": ["abstract", "abstractapi", "api", "api", "geolocation", "geolocation", "geolocation-api", "geolocation-application", "geolocation-data", "geolocation-database", "geolocation-plugin", "ip", "ip geolocation", "ip-geo", "ip-geolocation", "ip-geolocation-api", "ip-geolocation-ip2location", "library", "php", "php", "php-library", "wrapper"]
+    ,
+    "homepage": "https://github.com/abstractapi/php-ip-geolocation",
+    "readme": "README.md",
+    "time": "2021-04-15",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Bouchet",
+            "email": "libraries@abstractapi.com",
+            "homepage": "https://www.abstractapi.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/abstractapi/php-ip-geolocation",
+        "docs": "https://app.abstractapi.com/api/ip-geolocation/documentation"
+    },
+    "scripts": {
+        "check": [
+        ],
+        "fix": [
+        ],
+        "versions": [
+        ]
+    },
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.0.*",
+        "vlucas/phpdotenv": "^2.0"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Abstractapi\\IpGeolocation\\": "src/AbstractIpGeolocation"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Abstractapi\\IpGeolocation\\Tests\\": "tests/"
+        }
+    }
+}

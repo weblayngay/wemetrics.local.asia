@@ -1,0 +1,193 @@
+  .ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    right: -3px
+}
+.ribbon {
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Montserrat Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: .05em;
+    line-height: 15px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .4);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    right: -11px;
+    top: 10px;
+    width: 100px;
+    height: 28px;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    background-color: #dedede;
+    background-image: -webkit-linear-gradient(top, #ffffff 45%, #dedede 100%);
+    background-image: -o-linear-gradient(top, #ffffff 45%, #dedede 100%);
+    background-image: linear-gradient(to bottom, #ffffff 45%, #dedede 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdedede', GradientType=0)
+}
+
+.ribbon:before,
+.ribbon:after {
+    content: "";
+    border-top: 3px solid #9e9e9e;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    bottom: -3px
+}
+
+.ribbon:before {
+    left: 0
+}
+
+.ribbon:after {
+    right: 0
+}
+
+.ribbon-primary {
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #007bff;
+    background-image: -webkit-linear-gradient(top, #007bff 45%, #0258b5 100%);
+    background-image: -o-linear-gradient(top, #007bff 45%, #0258b5 100%);
+    background-image: linear-gradient(to bottom, #007bff 45%, #0258b5 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff007bff', endColorstr='#ff0258b5', GradientType=0)
+}
+
+.ribbon-primary:before,
+.ribbon-primary:after {
+    border-top: 3px solid #007bff
+}
+
+.ribbon-secondary {
+    color: #ffffff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    background-image: -webkit-linear-gradient(top, #6c757d 45%, #3e4347 100%);
+    background-image: -o-linear-gradient(top, #6c757d 45%, #3e4347 100%);
+    background-image: linear-gradient(to bottom, #6c757d 45%, #3e4347 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff6c757d', endColorstr='#ff3e4347', GradientType=0)
+}
+
+.ribbon-secondary:before,
+.ribbon-secondary:after {
+    border-top: 3px solid #6c757d
+}
+
+.ribbon-success {
+    color: #ffffff;
+    background-color: #28a745;
+    border-color: #28a745;
+    background-image: -webkit-linear-gradient(top, #28a745 45%, #1c732f 100%);
+    background-image: -o-linear-gradient(top, #28a745 45%, #1c732f 100%);
+    background-image: linear-gradient(to bottom, #28a745 45%, #1c732f 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff28a745', endColorstr='#ff1c732f', GradientType=0)
+}
+
+.ribbon-success:before,
+.ribbon-success:after {
+    border-top: 3px solid #28a745
+}
+
+.ribbon-danger {
+    color: #ffffff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    background-image: -webkit-linear-gradient(top, #dc3545 45%, #a62834 100%);
+    background-image: -o-linear-gradient(top, #dc3545 45%, #a62834 100%);
+    background-image: linear-gradient(to bottom, #dc3545 45%, #a62834 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffdc3545', endColorstr='#ffa62834', GradientType=0)
+}
+
+.ribbon-danger:before,
+.ribbon-danger:after {
+    border-top: 3px solid #dc3545
+}
+
+.ribbon-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    background-image: -webkit-linear-gradient(top, #ffc107 45%, #c99804 100%);
+    background-image: -o-linear-gradient(top, #ffc107 45%, #c99804 100%);
+    background-image: linear-gradient(to bottom, #ffc107 45%, #c99804 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffc107', endColorstr='#ffc99804', GradientType=0)
+}
+
+.ribbon-warning:before,
+.ribbon-warning:after {
+    border-top: 3px solid #ffc107
+}
+
+.ribbon-info {
+    color: #ffffff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    background-image: -webkit-linear-gradient(top, #17a2b8 45%, #117382 100%);
+    background-image: -o-linear-gradient(top, #17a2b8 45%, #117382 100%);
+    background-image: linear-gradient(to bottom, #17a2b8 45%, #117382 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff17a2b8', endColorstr='#ff117382', GradientType=0)
+}
+
+.ribbon-info:before,
+.ribbon-info:after {
+    border-top: 3px solid #17a2b8
+}
+
+.ribbon-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    background-image: -webkit-linear-gradient(top, #f8f9fa 45%, #7f8c99 100%);
+    background-image: -o-linear-gradient(top, #f8f9fa 45%, #7f8c99 100%);
+    background-image: linear-gradient(to bottom, #f8f9fa 45%, #7f8c99 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fff8f9fa', endColorstr='#ff7f8c99', GradientType=0)
+}
+
+.ribbon-light:before,
+.ribbon-light:after {
+    border-top: 3px solid #f8f9fa
+}
+
+.ribbon-link {
+    color: #ffffff;
+    background-color: #343a40;
+    border-color: #343a40;
+    background-image: -webkit-linear-gradient(top, #343a40 45%, #1a1f24 100%);
+    background-image: -o-linear-gradient(top, #343a40 45%, #1a1f24 100%);
+    background-image: linear-gradient(to bottom, #343a40 45%, #1a1f24 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff343a40', endColorstr='#ff1a1f24', GradientType=0)
+}
+
+.ribbon-link:before,
+.ribbon-link:after {
+    border-top: 3px solid #343a40
+}
+
+.ribbon-dark {
+    color: #007bff;
+    background-color: transparent;
+}
+
+.ribbon-dark:before,
+.ribbon-dark:after {
+    border-top: 3px solid transparent
+}

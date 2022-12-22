@@ -1,31 +1,23 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
-!wp-content-upgrade/
-!wp-admin/
-!wp-admin-upgrade/
-!wp-includes/
-!wp-includes-upgrade/
+# /vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# ignore everything in the "wp-content"
-wp-content/plugins/*
-wp-content/backups-dup-pro/
-wp-content/languages/
-wp-content/themes/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wflogs/
-wp-content/*.php
-!wp-content/plugins/we-payment/
-!wp-content/plugins/we-metrics/
-!wp-content/plugins/we-customize/
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
 
-# ignore everything in the "wp-admin"
-wp-admin/*
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
 
-# ignore everything in the "wp-includes"
-wp-includes/*
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
 
-# ignore log files and databases
-*.log
-*.sql
-*.sqlite
+storage/*.key
+#.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache

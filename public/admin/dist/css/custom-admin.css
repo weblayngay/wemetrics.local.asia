@@ -1,0 +1,565 @@
+.hk-pg-header .d-flex button{
+    margin-right: 5px;
+}
+#nav-tabs{
+    width: 100%;
+}
+#nav-tabContent{
+    width: 100%;
+    margin-top: 20px;
+}
+table tbody tr:first-child td, table tbody tr:first-child th{
+    border-top: 0px;
+}
+span.red{
+    color: red;
+    font-size: 20px;
+}
+.box-item{
+    margin: 10px 0px;
+}
+.delete-image:hover{
+    cursor:pointer;
+}
+img.lazy {
+    width: 100px;
+    display: block;
+}
+span.delete-image.hidden{
+    display: none;
+}
+.span-color{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.label-right{
+    margin-right: 20px;
+}
+input.max{
+    height:20px;
+    width:20px;
+}
+.product-module{
+    margin-top: 20px;
+}
+table tr:hover {
+    background-color: #fff !important;
+    color: #0b0b0b !important;
+}
+select.form-control[multiple]{
+    height: 200px;
+}
+.span-guide-text-green{
+    font-style: italic;
+    color: #0a1;
+    font-size: 13px;
+}
+.slug {
+    text-transform: lowercase;
+}
+/*
+|------------------------------
+| REMOVE ARROWS AND SPINNERS
+|------------------------------
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*
+|------------------------------
+| NESTED SET MODEL
+|------------------------------
+*/
+table div.nested-set-model__text{
+    border-bottom:2px dotted #f1f1f1;
+    padding: 10px 0;
+}
+.media-body span:first-child{
+    font-size: 14px !important;
+}
+.media-body span:nth-child(2){
+    font-size: 20px !important;
+    font-weight: bold;
+}
+p.order{
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+p.order-new{
+    background: #22af47;
+}
+p.order-paid{
+    background: #00acf0;
+}
+p.order-processing{
+    background: #f83f37;
+}
+p.order-pending{
+    background: #cf0007;
+}
+p.order-cancelled{
+    background: #000000;
+}
+/*
+|------------------------------
+| BRAND LOGO
+|------------------------------
+*/
+.brand-img {
+    width: 40%;
+}
+/*
+|------------------------------
+| ACTION
+|------------------------------
+*/
+.btn-action {
+    text-align: right;
+}
+.btn[class*="btn-outline-"].btn-action-120 {
+    padding-top: calc(0.467rem - 5px);
+    padding-bottom: calc(0.467rem - 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 120px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+.btn[class*="btn-outline-"].btn-action-80 {
+    padding-top: calc(0.467rem - 5px);
+    padding-bottom: calc(0.467rem - 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 80px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+.btn[class*="btn-outline-"].btn-action-200 {
+    padding-top: calc(0.467rem - 5px);
+    padding-bottom: calc(0.467rem - 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 200px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+.btn[class*="btn-outline-"].btn-action-150 {
+    padding-top: calc(0.467rem - 5px);
+    padding-bottom: calc(0.467rem - 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 150px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+/*
+|------------------------------
+| SEARCH
+|------------------------------
+*/
+.btn-search {
+    text-align: right;
+}
+.btn[class*="btn-outline-"].btn-search-120 {
+    padding-top: calc(0.467rem - 5px);
+    padding-bottom: calc(0.467rem - 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 120px;
+    height: 33px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+.btn[class*="btn-outline-"].btn-search-80 {
+    padding-top: calc(0.467rem - 5px);
+    padding-bottom: calc(0.467rem - 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 80px;
+    height: 33px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+.btn[class*="btn-outline-"].btn-search-200 {
+    padding-top: calc(0.467rem - 5px);
+    padding-bottom: calc(0.467rem - 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 200px;
+    height: 33px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+.btn[class*="btn-outline-"].btn-search-150 {
+    padding-top: calc(0.467rem - 5px);
+    padding-bottom: calc(0.467rem - 5px);
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 150px;
+    height: 33px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: smaller;
+}
+
+.search-form {
+    text-align: right;
+}
+
+.input-search 
+{
+    display: inline-block;
+    width: 22.5%;
+    height: 33px;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #475F7B;
+    background-color: #FFFFFF;
+    background-clip: padding-box;
+    border: 1px solid #5A8DEE;
+    border-radius: 0.267rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding-left: 10px;
+}
+
+.dropdown-search
+{
+    display: inline-block;
+    height: 33px;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #475F7B;
+    background-color: #FFFFFF;
+    background-clip: padding-box;
+    border: 1px solid #5A8DEE;
+    border-radius: 0.267rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding-left: 10px;
+}
+
+/*
+|------------------------------
+| PAGINATION
+|------------------------------
+*/
+.dataTables_paginate.paging_simple_numbers {
+    float: right;
+}
+/*
+|------------------------------
+| VOUCHER
+|------------------------------
+*/
+.voucher-code {
+    text-transform: uppercase;
+}
+
+/*
+|------------------------------
+| OTHER
+|------------------------------
+*/
+.pb-10
+{
+    padding-bottom: 10px;
+}
+
+.pb-20
+{
+    padding-bottom: 20px;
+}
+
+.pt-10
+{
+    padding-top: 10px;
+}
+
+.pt-20
+{
+    padding-top: 20px;
+}
+
+.w-120
+{
+    width: 120px;
+}
+
+.w-140
+{
+    width: 140px;
+}
+
+.w-220
+{
+    width: 220px;
+}
+
+
+.not-found-records
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.txt-al-r
+{
+    text-align: right;
+}
+
+.txt-al-l
+{
+    text-align: left;
+}
+
+img.icon-size-512 {
+    width: 512px;
+    height: 512px;
+}
+
+img.icon-size-256 {
+    width: 256px;
+    height: 256px;
+}
+
+img.icon-size-128 {
+    width: 128px;
+    height: 128px;
+}
+
+img.icon-size-64 {
+    width: 64px;
+    height: 64px;
+}
+
+img.icon-size-32 {
+    width: 32px;
+    height: 32px;
+}
+
+img.icon-size-16 {
+    width: 16px;
+    height: 16px;
+}
+
+/*UTM Creator*/
+.generate-url {
+  display: inline; 
+  width: 90%; 
+  margin-right: 10px;
+}
+
+.jss49 {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+}
+
+.jss24 {
+    max-width: 100%;
+}
+
+.MuiPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.MuiPaper-rounded {
+    border-radius: 4px;
+}
+
+.MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+}
+
+.jss50 {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    flex-direction: row;
+}
+
+.jss50 svg {
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.jss50 p {
+    padding-bottom: unset;
+}
+
+.MuiTypography-body1 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.MuiTable-root {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.MuiTableHead-root {
+    display: table-header-group;
+}
+
+.MuiTableRow-root {
+    color: inherit;
+    display: table-row;
+    outline: 0;
+    vertical-align: middle;
+}
+
+.MuiTableCell-sizeSmall {
+    padding: 6px 24px 6px 16px;
+}
+
+.MuiTableCell-head {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.MuiTableCell-root {
+    display: table-cell;
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.43;
+    border-bottom: 1px solid
+    rgba(224, 224, 224, 1);
+    vertical-align: inherit;
+}
+
+.MuiTypography-h2 {
+  font-size: 2.25em;
+  margin-top: 0.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+.jss43 {
+  word-break: break-all;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75);
+}
+
+.MuiInputLabel-animated {
+  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+
+.MuiInputLabel-shrink {
+  transform-origin: top left;
+}
+
+.MuiInputLabel-formControl {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(0, 24px) scale(1);
+}
+
+.MuiOutlinedInput-multiline {
+  padding: 18.5px 14px;
+}
+
+.MuiOutlinedInput-adornedEnd {
+  padding-right: 14px;
+}
+
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+
+.jss46 {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.jss46 > :first-child {
+  flex-grow: 1;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  transform: translate(14px, 12px) scale(1);
+}
+
+.MuiFormLabel-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+
+.jss46 > :not(:first-child) {
+  margin-left: 8px;
+}
+
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.required::placeholder {
+  color: red;
+}
+
+

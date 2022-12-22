@@ -1,0 +1,254 @@
+/*****************************/
+/*** Core html setup stuff ***/
+/* Tran Thanh Sang */
+/* sangtialia@gmail.com */
+/*****************************/
+@charset "utf-8";
+a{
+	text-decoration: none;
+	color:inherit;
+}
+.nowrap{
+	white-space:nowrap;
+}
+label{
+	font-weight:inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
+.imglink{
+	border:0;
+	transition: all 400ms ease 0s;
+}
+.imglink:hover{
+	opacity:0.80;
+}
+img{
+	max-width:100%;
+}
+input.button, button.button, a.button {
+	border:none; color:#FFF; cursor:pointer; padding:10px 25px; 
+	background:#ff9900; font-size:14px;transition: all 200ms ease 0s;
+	text-transform:uppercase;
+	}
+.button:hover{background:#666;}
+a.button{
+	display:inline-block;
+	text-decoration:none;
+}
+.button_1{
+	display:inline-block;
+	padding:10px 15px;
+	background:#002c3f;
+	color:#FFF;
+	border-radius:5px;
+	border:none;
+	text-transform:uppercase;
+}
+.inputbox{
+	border:1px solid #CCC;
+	max-width:100%;
+	padding:7px 5px 7px 7px;
+	}
+.text-uppercase{
+	text-transform:uppercase;
+}
+hr{ border:none; border-top:1px dotted #CCCCCC; background:none;}
+#stl-content img, #stl-content iframe, #stl-right img{ max-width:100%;}
+/* table list */
+table.list{
+	border-left:1px solid #CCCCCC;
+	border-top:1px solid #CCCCCC;
+	border-collapse:collapse;
+	width:100%;
+	}
+table.list tr td{
+	padding:5px 3px 5px 3px;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	background:#FFFFFF;
+	}
+table.list tr.title td{ font-weight:bold; text-align:center; background:#F6F6F6}
+table.list tr td p{margin:3px 0;}
+#stl-body{
+	padding-bottom:60px;
+}
+
+#stl-bottom{
+	background:#002c3f;
+	color:#fff;
+	padding-top:30px;
+}
+#stl-bottom a:hover{
+	color:#ddd;
+}
+
+#stl-bottom .contact {
+color:#fff;
+}
+
+#stl-bottom .b-title{
+	padding-top:15px;
+	padding-bottom:25px;
+	font-size:16px;
+	color:#fff;
+}
+
+.break, .clear{clear:both;}
+.note{font-style:italic; color:#666;}
+div.break{clear:both; height:1px; font-size:1px;}
+.red{color:#F00;}
+
+
+#message{
+	margin-top:15px;
+}
+.modheading{
+	font-size:35px;
+	font-weight:600;
+	margin:0 0 30px 0;
+	}
+#stl-right .block .b-title{
+	font-size:23px;
+	margin:30px 0;
+}
+#stl-right .block{
+	margin-bottom:30px;
+}
+/* editor bottom */
+div.editor_bt_bottom{
+	margin-top:2px;
+	clear:both;
+}
+div.editor_bt_bottom a{
+	height:32px;
+	line-height:27px;
+	vertical-align:middle;
+	padding:2px 10px;
+	border: 1px solid #9EA7F8;
+	background:#f3f6fc;
+	display:inline-block;
+}
+div.mbt_bar{
+	text-align:right;
+	margin-bottom:5px;
+}
+.blstyle1{
+	margin-bottom:15px;
+	}
+.blstyle1 .b-title{
+	margin:0 !important;
+	padding:10px 0 5px 20px;
+	line-height:30px;
+	vertical-align:middle;
+	min-height:45px;
+	color:#FFF;
+	font-size:18px;
+	text-transform:uppercase;
+	background:#000;
+	}
+.blstyle1 .b-content{
+	border:1px solid #000;
+	padding:10px;
+	border-top:0;
+}
+
+/* ------------ CHECKBOX switch -----------------*/
+ /* The switch - the box around the slider */
+.switch-box .switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch-box .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* Hide default HTML checkbox */
+.switch-box .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.switch-box .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch-box .slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch-box input:checked + .slider {
+  background-color: #ff9900;
+}
+
+.switch-box input:focus + .slider {
+  box-shadow: 0 0 1px #ed1c24;
+}
+
+.switch-box input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switch-box .slider.round {
+  border-radius: 30px;
+}
+
+.switch-box .slider.round:before {
+  border-radius: 50%;
+}
+.switch-box .switch-label{
+	display: inline-block;
+	height: 30px;
+	line-height: 26px;
+	vertical-align:text-top;
+	padding-left: 5px;
+}
+/* -- END CHECKBOX */
+/* min */
+.switch-box.min .switch{
+	width:40px;
+	height:20px;
+}
+.switch-box.min .slider::before{
+	width:15px;
+	height:15px;
+	bottom:2px;
+}
+.switch-box.min input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+.switch-box.min .switch-label{
+	line-height:1.2;
+	font-weight:normal;
+	height:40px;
+	font-size:13px;
+}
